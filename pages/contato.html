@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Meu Portfólio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">MeuPortfólio</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Entre em Contato</h1>
+
+        <section class="card">
+            <h2>Formulário de Contato</h2>
+            <p style="margin-bottom: 2rem;">Preencha o formulário abaixo para solicitar um orçamento ou tirar dúvidas sobre meus serviços. Responderei o mais breve possível!</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-cliente">Você é pessoa física ou jurídica? *</label>
+                    <select id="tipo-cliente" name="tipo-cliente" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="pf">Pessoa Física</option>
+                        <option value="pj">Pessoa Jurídica (Empresa)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Melhor horário para contato:</label>
+                    <select id="horario" name="horario">
+                        <option value="">Selecione uma opção</option>
+                        <option value="manha">Manhã (8h às 12h)</option>
+                        <option value="tarde">Tarde (12h às 18h)</option>
+                        <option value="noite">Noite (18h às 22h)</option>
+                        <option value="qualquer">Qualquer horário</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Tipo de Serviço Desejado *</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione o serviço</option>
+                        <option value="estatico-1-2">Site Estático - 1 a 2 páginas (R$ 500)</option>
+                        <option value="estatico-3-5">Site Estático - 3 a 5 páginas (R$ 1.000)</option>
+                        <option value="estatico-mais-5">Site Estático - Mais de 5 páginas (R$ 2.000)</option>
+                        <option value="dinamico-basico">Site Dinâmico Básico (A partir de R$ 3.000)</option>
+                        <option value="dinamico-completo">Site Dinâmico Completo (A partir de R$ 5.000)</option>
+                        <option value="avancado">Site Avançado (A partir de R$ 8.000)</option>
+                        <option value="ecommerce">E-commerce (A partir de R$ 6.000)</option>
+                        <option value="outro">Outro / Não sei ainda</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Prefiro ser contatado por:</label>
+                    <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="contato-via" value="email"> E-mail
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="contato-via" value="whatsapp"> WhatsApp
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="contato-via" value="telefone"> Ligação
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Breve descrição do projeto *</label>
+                    <textarea id="descricao" name="descricao" required placeholder="Descreva o que você precisa: tipo de site, quantidade de páginas, funcionalidades desejadas, prazo, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="orcamento">Orçamento estimado:</label>
+                    <input type="text" id="orcamento" name="orcamento" placeholder="Ex: R$ 1.000 a R$ 2.000">
+                </div>
+
+                <div class="form-group">
+                    <label for="prazo">Prazo desejado:</label>
+                    <select id="prazo" name="prazo">
+                        <option value="">Selecione o prazo</option>
+                        <option value="1-mes">1 mês</option>
+                        <option value="2-meses">2 meses</option>
+                        <option value="3-meses">3 meses</option>
+                        <option value="6-meses">6 meses</option>
+                        <option value="sem-prazo">Sem prazo definido</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Urgência do projeto:</label>
+                    <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; margin: 0;">
+                            <input type="radio" name="urgencia" value="baixa"> Baixa - Sem pressa
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; margin: 0;">
+                            <input type="radio" name="urgencia" value="media"> Média - Gostaria logo
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; margin: 0;">
+                            <input type="radio" name="urgencia" value="alta"> Alta - Preciso com urgência
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Outras formas de contato</h2>
+            <table>
+                <tr>
+                    <th>Meio</th>
+                    <th>Informações</th>
+                </tr>
+                <tr>
+                    <td>📧 E-mail</td>
+                    <td>lucas.dettmann.ti@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>🌐 GitHub</td>
+                    <td><a href="https://github.com/dettmann32" target="_blank">github.com/dettmann32</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Portfólio - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
